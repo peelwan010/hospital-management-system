@@ -6,6 +6,20 @@ The system is intended for internal hospital use on localhost or a local network
 
 --------------------------------------------------
 
+FEATURES
+
+- Admin dashboard
+- Patient management with full CRUD functionality
+  - Add patients
+  - View patient records
+  - Edit patient details
+  - Delete patient records
+- Persistent local database storage
+- Clean, server-rendered user interface
+- Modular and readable backend architecture
+
+--------------------------------------------------
+
 TECH STACK
 
 - Python
