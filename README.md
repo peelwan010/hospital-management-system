@@ -53,6 +53,7 @@ hospital-management-system
 ├── requirements.txt       # Dependencies
 └── README.md
 
+
 --------------------------------------------------
 
 HOW TO RUN LOCALLY
