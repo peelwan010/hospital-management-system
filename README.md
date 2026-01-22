@@ -16,32 +16,6 @@ TECH STACK
 
 --------------------------------------------------
 
-## Project Structure
-
-hospital-management-system
-│
-├── app
-│ ├── init.py # App factory & database initialization
-│ ├── auth.py # Authentication routes
-│ ├── models.py # Database models
-│ ├── routes.py # Main application routes
-│ │
-│ └── templates
-│ ├── base.html
-│ ├── dashboard.html
-│ ├── patients.html
-│ └── edit_patient.html
-│
-├── static
-│ └── style.css # Global styles
-│
-├── run.py # Application entry point
-├── requirements.txt # Dependencies
-└── README.md
-
-
---------------------------------------------------
-
 HOW TO RUN LOCALLY
 
 1. Clone the repository
