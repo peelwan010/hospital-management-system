@@ -32,25 +32,27 @@ TECH STACK
 
 PROJECT STRUCTURE
 
-hospital-management-system/
+hospital-management-system
 │
-├── app/
-│   ├── __init__.py
-│   ├── auth.py
-│   ├── models.py
-│   ├── routes.py
-│   └── templates/
+├── app
+│   ├── __init__.py        # App factory & database initialization
+│   ├── auth.py            # Authentication routes
+│   ├── models.py          # Database models
+│   ├── routes.py          # Main application routes
+│   │
+│   └── templates
 │       ├── base.html
 │       ├── dashboard.html
 │       ├── patients.html
 │       └── edit_patient.html
 │
-├── static/
-│   └── style.css
+├── static
+│   └── style.css          # Global styles
 │
-├── run.py
-├── requirements.txt
+├── run.py                 # Application entry point
+├── requirements.txt       # Dependencies
 └── README.md
+
 
 --------------------------------------------------
 
