@@ -1,13 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-    <h2>Admin Dashboard</h2>
-    <p>Total Patients: {{ patient_count }}</p>
-    <p>Total Staff: {{ staff_count }}</p>
-    <a href="/logout">Logout</a>
-</body>
-</html>
+{% extends "base.html" %}
 
+{% block content %}
+<div class="dashboard-container">
+    <div class="navbar">
+        <h2>Hospital Management System</h2>
+        <span class="admin-label">Admin Panel</span>
+    </div>
+
+    <div class="dashboard-grid">
+        <a href="/patients" class="card">
+    <h3>Patients</h3>
+    <p>Manage patient records</p>
+</a>
+
+        <div class="card">
+            <h3>Doctors</h3>
+            <p>View and manage doctors</p>
+        </div>
+
+        <div class="card">
+            <h3>Appointments</h3>
+            <p>Schedule and track visits</p>
+        </div>
+
+        <div class="card">
+            <h3>Reports</h3>
+            <p>View hospital analytics</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

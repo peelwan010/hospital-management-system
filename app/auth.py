@@ -1,27 +1,16 @@
-from flask import Blueprint, render_template, request, redirect, url_for, session
+from flask import Blueprint, render_template, request, redirect, url_for
 from .models import Admin
+from . import db
 
-auth = Blueprint("auth", __name__)
+auth_bp = Blueprint("auth", __name__)
 
-
-@auth.route("/login", methods=["GET", "POST"])
+@auth_bp.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
+        username = request.form.get("username")
+        password = request.form.get("password")
 
-        admin = Admin.query.filter_by(username=username).first()
-        if admin and admin.check_password(password):
-            session["admin_id"] = admin.id
-            return redirect(url_for("main.dashboard"))
-
-        return "Invalid credentials", 401
+        # Login logic will be added later
+        return redirect(url_for("main.dashboard"))
 
     return render_template("login.html")
-
-
-@auth.route("/logout")
-def logout():
-    session.pop("admin_id", None)
-    return redirect(url_for("auth.login"))
-
