@@ -1,26 +1,107 @@
 # Hospital Management System
 
-A locally hosted hospital management system built with Python and Flask, designed to manage admins, patients, and staff on a single machine or within a hospital network.
+A locally hosted hospital management system built using Python and Flask, designed to manage patient records through a clean admin dashboard.
 
-This project is intended for internal hospital use (localhost / LAN) and is not designed for public internet deployment.
+The system is intended for internal hospital use on localhost or a local network (LAN) and is not designed for public internet deployment.
 
-## Features
-- Multiple admin accounts
-- Admin authentication
-- Patient record management
-- Staff record management
-- Local database storage
-- Browser-based interface connected to a Python backend
+--------------------------------------------------
 
-## Tech Stack
+FEATURES
+
+- Admin dashboard
+- Patient management with full CRUD functionality
+  - Add patients
+  - View patient records
+  - Edit patient details
+  - Delete patient records
+- Persistent local database storage
+- Clean, server-rendered user interface
+- Modular and readable backend architecture
+
+--------------------------------------------------
+
+TECH STACK
+
 - Python
 - Flask
 - Flask-SQLAlchemy
 - SQLite (local database)
-- HTML/CSS (server-rendered templates)
+- HTML & CSS (server-rendered templates)
 
-## Background
-This system was initially prototyped during the COVID-19 period and later generalized into a broader hospital management solution with a cleaner architecture.
+--------------------------------------------------
 
-## Status
-Work in progress.
+PROJECT STRUCTURE
+
+hospital-management-system/
+│
+├── app/
+│   ├── __init__.py
+│   ├── auth.py
+│   ├── models.py
+│   ├── routes.py
+│   └── templates/
+│       ├── base.html
+│       ├── dashboard.html
+│       ├── patients.html
+│       └── edit_patient.html
+│
+├── static/
+│   └── style.css
+│
+├── run.py
+├── requirements.txt
+└── README.md
+
+--------------------------------------------------
+
+HOW TO RUN LOCALLY
+
+1. Clone the repository
+
+   git clone https://github.com/peelwan010/hospital-management-system.git
+   cd hospital-management-system
+
+2. Create and activate a virtual environment
+
+   python -m venv venv
+   source venv/Scripts/activate
+
+3. Install dependencies
+
+   pip install -r requirements.txt
+
+4. Run the application
+
+   python run.py
+
+5. Open the application in your browser
+
+   http://127.0.0.1:5000
+
+--------------------------------------------------
+
+BACKGROUND
+
+This project was originally inspired by the need for simple, local-first hospital record management systems, particularly in environments where internet-based solutions are impractical.
+
+It was later rebuilt with a cleaner backend architecture and a presentable UI to serve as a structured backend-focused project demonstrating CRUD operations, routing, and database integration.
+
+--------------------------------------------------
+
+STATUS
+
+Core functionality completed.
+
+Potential future improvements:
+- Doctor and staff management
+- Appointment scheduling
+- Session-based authentication and access control
+- UI refinements
+
+--------------------------------------------------
+
+NOTES
+
+- The application runs entirely on localhost.
+- No cloud services or external hosting are used.
+- Designed to be simple, reliable, and easy to understand.
