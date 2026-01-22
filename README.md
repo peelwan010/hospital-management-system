@@ -61,11 +61,13 @@ HOW TO RUN LOCALLY
 1. Clone the repository
 
    git clone https://github.com/peelwan010/hospital-management-system.git
+
    cd hospital-management-system
 
 2. Create and activate a virtual environment
 
    python -m venv venv
+
    source venv/Scripts/activate
 
 3. Install dependencies
@@ -76,9 +78,10 @@ HOW TO RUN LOCALLY
 
    python run.py
 
-5. Open the application in your browser
+5. Open in browser
 
    http://127.0.0.1:5000
+
 
 --------------------------------------------------
 
