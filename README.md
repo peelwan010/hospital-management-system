@@ -35,22 +35,22 @@ TECH STACK
 hospital-management-system
 │
 ├── app
-│   ├── __init__.py        # App factory & database initialization
-│   ├── auth.py            # Authentication routes
-│   ├── models.py          # Database models
-│   ├── routes.py          # Main application routes
-│   │
-│   └── templates
-│       ├── base.html
-│       ├── dashboard.html
-│       ├── patients.html
-│       └── edit_patient.html
+│ ├── init.py # App factory & database initialization
+│ ├── auth.py # Authentication routes
+│ ├── models.py # Database models
+│ ├── routes.py # Main application routes
+│ │
+│ └── templates
+│ ├── base.html
+│ ├── dashboard.html
+│ ├── patients.html
+│ └── edit_patient.html
 │
 ├── static
-│   └── style.css          # Global styles
+│ └── style.css # Global styles
 │
-├── run.py                 # Application entry point
-├── requirements.txt       # Dependencies
+├── run.py # Application entry point
+├── requirements.txt # Dependencies
 └── README.md
 
 
