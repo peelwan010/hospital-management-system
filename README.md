@@ -30,7 +30,7 @@ TECH STACK
 
 --------------------------------------------------
 
-PROJECT STRUCTURE
+## Project Structure
 
 hospital-management-system
 │
